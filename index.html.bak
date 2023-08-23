@@ -150,6 +150,11 @@ const images = [
   "https://i.ibb.co/JngV4sJ/B8-A4964-B-7-DF0-4-FD9-9169-41650-F049-E01-removebg-preview-1.png",
   
 ];
+const orderButtons = document.querySelectorAll(".orderButton"); // Select all Buy Product buttons
+
+ orderButtons.forEach((button, i) => {
+    button.setAttribute("data-product", `T-shirt ${i + 1}`);
+  });
 
 const sliderImage = document.getElementById("sliderImage");
 const prevButton = document.getElementById("prevButton");
